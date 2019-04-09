@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	 *{margin:0;padding:0}
+	body{
+	 background-color:#111;
+	 background-image:radial-gradient(#faa,#fff);
+	 background-size:cover;
+	 color:#fff;
+	 font-weight:700;
+	}
+	#kil{
+	 font-size:50px;
+	 height:200px;
+	 margin:350px auto;
+   text-transform:uppercase;
+	 text-align:center;
+	}
+	#kil div{
+	 margin:0 auto;
+	 position:absolute;
+	 left:35%;
+	 width:450px;
+	 animation:sww 20s linear infinite;
+	}
+	span{
+	 display:block;
+	 opacity:.8;
+	}
+ #kil div:nth-child(2){animation-delay:4s}
+ #kil div:nth-child(3){animation-delay:8s}
+ #kil div:nth-child(4){animation-delay:12s}
+ #kil div:nth-child(5){animation-delay:16s}
+ @keyframes sww{
+  0%{opacity:0;filter-blur(20px);transform:scale(12);}
+	3%{opacity:1;filter-blur(0);transform:scale(1);}
+  10%{opacity:1;filter-blur(0);transform:scale(.9);}
+  13%{opacity:0;filter-blur(10px);transform:scale(.1);}
+  80%{opacity:0;}
+	100{opacity:0;}
+ }
+	</style>
+</head>
+<body>
+	<div id="kil">
+	  <div>dou you<span>love me</span></div>
+	  <div>dou you<span>love me</span></div>
+		<div>dou you<span>love me</span></div>
+		<div>dou you<span>love me</span></div>
+		<div>dou you<span>love me</span></div>
+	</div>
+</body>
+</html>
